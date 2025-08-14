@@ -1,152 +1,125 @@
-/* ====== Importar fuente personalizada desde Google Fonts ====== */
-/* Esto se debe poner al inicio del CSS para que cargue la fuente */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+/* ====== Fuente moderna ====== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-/* ====== Estilos generales ====== */
-/* Define la tipografía, quita márgenes y relleno por defecto, 
-   aplica un color de fondo suave y texto gris oscuro */
 /* ====== Estilos generales ====== */
 body {
-    font-family: 'Poppins', sans-serif; /* Fuente principal */
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-
-    /* Fondo con degradado suave */
-    background: linear-gradient(135deg, #f2f2f2, #d6e4f0);
+    background-color: #f2f2f2;
     color: #333;
-
-    /* Para que el degradado ocupe toda la altura de la página */
-    min-height: 100vh;
 }
-/* ====== Encabezado ====== */
-/* Centra el contenido, agrega relleno y un fondo oscuro con texto blanco */
 
+/* ====== Efecto scroll suave ====== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ====== Encabezado con parallax ====== */
 header {
-    text-align: center; /* Centra texto e imágenes dentro del encabezado */
-    padding: 20px; /* Espaciado interno */
-    background-color: #444; /* Fondo gris oscuro */
-    color: white; /* Texto blanco */
+    position: relative;
+    background: url('fondo-parallax.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Overlay oscuro para mejorar legibilidad */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+/* Texto y elementos encima del overlay */
+header * {
+    position: relative;
+    z-index: 2;
 }
 
 /* Imagen de perfil circular */
 .perfil {
-    width: 150px; /* Ancho fijo */
-    height: 150px; /* Alto fijo */
-    object-fit: cover;      /* Ajusta la imagen recortando lo que sobra sin deformarla */
-    border-radius: 50%;     /* Hace que la imagen sea redonda */
-    border: 3px solid #fff; /* Borde blanco de 3px */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Sombra alrededor */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave al pasar el mouse */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efecto hover para la foto de perfil */
-/* Agranda ligeramente la imagen y aumenta la sombra */
 .perfil:hover {
-    transform: scale(1.05); /* Aumenta el tamaño un 5% */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.4); /* Sombra más intensa */
-}
-/* ====== Fondo con efecto Parallax ====== */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-
-    /* Fondo con imagen */
-    background-image: url('fondo.jpg'); /* Cambia por el nombre o URL de tu imagen */
-    background-size: cover;             /* La imagen cubre todo el fondo */
-    background-position: center;        /* Centra la imagen */
-    background-attachment: fixed;       /* Parallax: la imagen queda fija mientras el contenido se desplaza */
-    background-repeat: no-repeat;       /* Evita que se repita la imagen */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
 }
 
-/* ====== Fondo semi-transparente para el contenido ====== */
-main, header, footer {
-    background-color: rgba(255, 255, 255, 0.85); /* Fondo blanco con transparencia */
-    border-radius: 10px;                         /* Bordes redondeados */
-    margin: 20px;                                 /* Espacio alrededor */
-    padding: 20px;                                /* Espacio interno */
+/* Botón "Conóceme" */
+.boton {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
-/* ====== Sombra suave para destacar el contenido ====== */
-header, main, footer {
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+.boton:hover {
+    background-color: #cc5200;
+    transform: scale(1.05);
 }
-
 
 /* ====== Sección principal ====== */
-/* Centra el texto y agrega espaciado interno */
 main {
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Centra el contenido */
+    padding: 20px;
+    text-align: center;
 }
 
-/* Imagen de la guitarra rectangular */
+/* Imagen guitarra */
 .guitarra {
-    width: 250px; /* Ancho fijo */
-    height: 150px; /* Alto fijo */
-    object-fit: cover;     /* Ajusta la imagen recortando lo que sobra sin deformarla */
-    border-radius: 10px;   /* Bordes suavemente redondeados */
-    border: 3px solid #444; /* Borde gris oscuro */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Sombra alrededor */
-    display: block; /* Evita que se alinee como texto */
-    margin: 20px auto; /* Centra la imagen y da espacio alrededor */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave al pasar el mouse */
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #444;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    display: block;
+    margin: 20px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efecto hover para la guitarra */
-/* Agranda ligeramente la imagen y aumenta la sombra */
 .guitarra:hover {
-    transform: scale(1.05); /* Aumenta el tamaño un 5% */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.4); /* Sombra más intensa */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
 }
 
 /* ====== Footer ====== */
-/* Barra inferior con fondo oscuro, texto blanco y centrado */
 footer {
-    background-color: #444; /* Fondo gris oscuro */
-    color: white; /* Texto blanco */
-    text-align: center; /* Centra el texto */
-    padding: 10px; /* Espaciado interno */
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
 /* ====== Ajustes para móviles ====== */
-/* Reduce el tamaño de las imágenes en pantallas pequeñas */
 @media (max-width: 600px) {
     .perfil {
-        width: 120px; /* Más pequeño en móvil */
+        width: 120px;
         height: 120px;
     }
-
     .guitarra {
-        width: 200px; /* Más pequeña en móvil */
+        width: 200px;
         height: 120px;
     }
-}
-/* ====== Parallax General ====== */
-/* Configuración base para las secciones parallax */
-.parallax {
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
-    background-attachment: fixed; /* Fondo fijo para el efecto parallax */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita repeticiones */
-    background-size: cover; /* Escala la imagen para cubrir todo */
-}
-
-/* ====== Capa 1 ====== */
-.capa1 {
-    background-image: url('pedales.jpg'); /* Cambia por la ruta real */
-}
-
-/* ====== Capa 2 ====== */
-.capa2 {
-    background-image: url('pedales.jpg'); /* Cambia por la ruta real */
-}
-
-/* ====== Sección intermedia ====== */
-.contenido-intermedio {
-    padding: 50px;
-    background-color: rgba(255, 255, 255, 0.85); /* Fondo translúcido */
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }

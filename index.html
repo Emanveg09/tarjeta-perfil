@@ -1,51 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Primer Sitio Web</title>
-     <!-- Vinculamos el archivo CSS -->
+    <!-- Fuente moderna de Google Fonts -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Encabezado del sitio -->
+    <!-- Encabezado con parallax -->
     <header>
-        <!-- Imagen de perfil -->
-        <!-- "class" nos permite aplicar un estilo específico desde CSS -->
         <img src="Yo.jpg" alt="Foto de perfil" class="perfil">
-        <h1>¡Hola, Soy Emanuel</h1>
+        <h1>¡Hola, Soy Emanuel!</h1>
         <p>Este es mi primer sitio web publicado en Github Pages</p>
+        <a href="#Sobre-Mi" class="boton">Conóceme</a>
     </header>
+
+    <!-- Sección principal -->
     <main>
-        <!-- Contenido principal -->
         <section id="Sobre-Mi">
-            <h2>Sobre Mi</h2>
-            <!-- Texto descriptivo -->
-            <p>Me gusta la informatica, tocar la guitarra y aprender cosas nuevas</p>
+            <h2>Sobre Mí</h2>
+            <p>Me gusta la informática, tocar la guitarra y aprender cosas nuevas.</p>
             <h3>Mis Intereses</h3>
             <ul>
-                <li>Programacion</li>
-                <li>Musica y guitarras</li>
+                <li>Programación</li>
+                <li>Música y guitarras</li>
                 <li>Ciberseguridad</li>
             </ul>
             <img src="Guitarra.png" alt="Guitarra" class="guitarra">
         </section>
     </main>
-    <!-- Primera capa parallax -->
-<div class="parallax capa1"></div>
 
-<!-- Sección intermedia -->
-<section class="contenido-intermedio">
-    <h2>Más sobre mí</h2>
-    <p>Este es un texto intermedio para separar secciones y mostrar el efecto.</p>
-</section>
-
-<!-- Segunda capa parallax -->
-<div class="parallax capa2"></div>
-
+    <!-- Pie de página -->
     <footer>
         <p>© 2025 Emanuel Vega</p>
     </footer>
-    
 </body>
 </html>
