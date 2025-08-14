@@ -1,0 +1,4 @@
+git add .
+git commit -m "Corregidas rutas de imágenes" (agregar entre comillas los cambios)
+
+git push origin main
