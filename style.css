@@ -1,79 +1,87 @@
 /* ====== Estilos generales ====== */
+/* Define la tipografía, quita márgenes y relleno por defecto, 
+   aplica un color de fondo suave y texto gris oscuro */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-    color: #333;
+    margin: 0; /* Elimina margen por defecto */
+    padding: 0; /* Elimina relleno por defecto */
+    background-color: #f2f2f2; /* Color de fondo claro */
+    color: #333; /* Color del texto */
 }
 
 /* ====== Encabezado ====== */
+/* Centra el contenido, agrega relleno y un fondo oscuro con texto blanco */
 header {
-    text-align: center;
-    padding: 20px;
-    background-color: #444;
-    color: white;
+    text-align: center; /* Centra texto e imágenes dentro del encabezado */
+    padding: 20px; /* Espaciado interno */
+    background-color: #444; /* Fondo gris oscuro */
+    color: white; /* Texto blanco */
 }
 
 /* Imagen de perfil circular */
 .perfil {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;      /* Recorta la imagen sin deformarla */
-    border-radius: 50%;     /* Forma redonda */
-    border: 3px solid #fff; /* Borde blanco */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 150px; /* Ancho fijo */
+    height: 150px; /* Alto fijo */
+    object-fit: cover;      /* Ajusta la imagen recortando lo que sobra sin deformarla */
+    border-radius: 50%;     /* Hace que la imagen sea redonda */
+    border: 3px solid #fff; /* Borde blanco de 3px */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Sombra alrededor */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave al pasar el mouse */
 }
 
 /* Efecto hover para la foto de perfil */
+/* Agranda ligeramente la imagen y aumenta la sombra */
 .perfil:hover {
-    transform: scale(1.05); /* Agranda un poco */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    transform: scale(1.05); /* Aumenta el tamaño un 5% */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4); /* Sombra más intensa */
 }
 
 /* ====== Sección principal ====== */
+/* Centra el texto y agrega espaciado interno */
 main {
-    padding: 20px;
-    text-align: center;
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el contenido */
 }
 
 /* Imagen de la guitarra rectangular */
 .guitarra {
-    width: 250px;
-    height: 150px;
-    object-fit: cover;     /* Recorta sin deformar */
-    border-radius: 10px;   /* Bordes redondeados */
-    border: 3px solid #444;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    display: block;
-    margin: 20px auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px; /* Ancho fijo */
+    height: 150px; /* Alto fijo */
+    object-fit: cover;     /* Ajusta la imagen recortando lo que sobra sin deformarla */
+    border-radius: 10px;   /* Bordes suavemente redondeados */
+    border: 3px solid #444; /* Borde gris oscuro */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Sombra alrededor */
+    display: block; /* Evita que se alinee como texto */
+    margin: 20px auto; /* Centra la imagen y da espacio alrededor */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave al pasar el mouse */
 }
 
 /* Efecto hover para la guitarra */
+/* Agranda ligeramente la imagen y aumenta la sombra */
 .guitarra:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    transform: scale(1.05); /* Aumenta el tamaño un 5% */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4); /* Sombra más intensa */
 }
 
 /* ====== Footer ====== */
+/* Barra inferior con fondo oscuro, texto blanco y centrado */
 footer {
-    background-color: #444;
-    color: white;
-    text-align: center;
-    padding: 10px;
+    background-color: #444; /* Fondo gris oscuro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Espaciado interno */
 }
 
 /* ====== Ajustes para móviles ====== */
+/* Reduce el tamaño de las imágenes en pantallas pequeñas */
 @media (max-width: 600px) {
     .perfil {
-        width: 120px;
+        width: 120px; /* Más pequeño en móvil */
         height: 120px;
     }
 
     .guitarra {
-        width: 200px;
+        width: 200px; /* Más pequeña en móvil */
         height: 120px;
     }
 }
