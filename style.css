@@ -123,3 +123,30 @@ footer {
         height: 120px;
     }
 }
+/* ====== Parallax General ====== */
+/* Configuración base para las secciones parallax */
+.parallax {
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background-attachment: fixed; /* Fondo fijo para el efecto parallax */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repeticiones */
+    background-size: cover; /* Escala la imagen para cubrir todo */
+}
+
+/* ====== Capa 1 ====== */
+.capa1 {
+    background-image: url('pedales.jpg'); /* Cambia por la ruta real */
+}
+
+/* ====== Capa 2 ====== */
+.capa2 {
+    background-image: url('pedales.jpg'); /* Cambia por la ruta real */
+}
+
+/* ====== Sección intermedia ====== */
+.contenido-intermedio {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.85); /* Fondo translúcido */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
