@@ -77,15 +77,13 @@ header * {
     background-color: #ff6600;
     color: white;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 5px;
     text-decoration: none;
-    font-weight: bold;
-    margin-top: 20px;
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .boton:hover {
-    background-color: #cc5200;
+    background-color: #666;
     transform: scale(1.05);
 }
 
@@ -185,15 +183,18 @@ img {
 /*Estilo  imagenes de secciones */
 .guitarra,
 .proyecto-img,
-.hobby-img {
-    border-radius: 10px; /*bordes redondeados*/
-    box-shadow: 0 5px 15px rgba(0,0,0,0.4); /*sombra mas marcada*/
-    margin-top: 15px; /*espacio superior */
-    transition: transform 0.3s ease; /*efecto suave al pasar el mouse*/
+.hobby-img,
+.perfil {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+
 /*====efecto hover===*/
 .guitarra:hover,
 .proyecto-img:hover,
 .hobby-img:hover {
     transform: scale(1.05); /*aumenta un poco el tamaño */
 }
+section {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
