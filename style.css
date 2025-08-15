@@ -143,3 +143,22 @@ footer {
 .proyecto-img:hover {
     transform: scale(1.05); /*hace zoom suave */
 }
+#hobbies {
+    text-align: center;
+    padding: 20px;
+    background-color: #628497;
+    border-top: 3px solid #4690bb;
+
+}
+.hobbies-img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+}
+.hobbies-img:hover{
+    transform: scale(1.05);
+
+}
