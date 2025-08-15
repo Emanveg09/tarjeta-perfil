@@ -1,13 +1,22 @@
 /* ====== Fuente moderna ====== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-/* ====== Estilos generales ====== */
+/* ====== Estilos generales ====== fondo degradado animado */
 body {
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    min-height: 100vh;
+    background: linear-gradient(270deg, #f0f4f8, #cfd9df, #e0eafc);
+    background-size: 600% 600%;
+    animation: gradientAnimation 15s ease infinite;
+    font-family: 'Segoe UI', sans-serif;
     color: #333;
+}
+/* Animación del degradado */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 /* ====== Efecto scroll suave ====== */
