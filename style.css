@@ -144,18 +144,14 @@ footer {
     transform: scale(1.05); /*hace zoom suave */
 }
 #hobbies {
-    text-align: center;
+    background-color: #e9ecef;
     padding: 20px;
-    background-color: #628497;
-    border-top: 3px solid #4690bb;
-
+    text-align: center;
 }
 .hobbies-img{
     width: 250px;
-    height: 150px;
-    object-fit: cover;
     border-radius: 8px;
-    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
     transition: transform 0.3s ease;
 }
 .hobbies-img:hover{
