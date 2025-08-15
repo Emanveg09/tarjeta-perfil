@@ -159,4 +159,32 @@ footer {
 .hobby-img:hover {
   transform: scale(1.05);
 }
-
+/* Estilo para todas las imagenes */
+img {
+    max-width: 100%; /*evita que la imagen sobrepase el ancho del contenedor*/
+    height: auto; /*mantiene las proporciones orginales */
+    display: block; /*Evita espacios raros debajo de la imagen */
+    margin: 0 auto; /*centra la imagen */
+}
+/* Estilo de foto de perfil */
+.perfil{
+    width: 150px; /*Tamaño fijo para la foto de perfil */
+    border-radius: 50%; /*Hace la imagen circular */
+    border:  3px solid white; /*borde blanco alrededor*/
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+/*Estilo  imagenes de secciones */
+.guitarra,
+.proyecto-img,
+.hobby-img {
+    border-radius: 10px; /*bordes redondeados*/
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4); /*sombra mas marcada*/
+    margin-top: 15px; /*espacio superior */
+    transition: transform 0.3s ease; /*efecto suave al pasar el mouse*/
+}
+/*====efecto hover===*/
+.guitarra:hover,
+.proyecto-img:hover,
+.hobby-img:hover {
+    transform: scale(1.05); /*aumenta un poco el tamaño */
+}
