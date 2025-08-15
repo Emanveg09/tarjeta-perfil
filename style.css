@@ -123,3 +123,23 @@ footer {
         height: 120px;
     }
 }
+/* ====seccion proyectos=== */
+#proyectos {
+    text-align: center; /*centra texto e imagen*/
+    padding: 40px 20px;
+    background-color: #e9ecef;/*gris claro*/
+    border-top: 3px solid #444;
+}
+/*imagen del proyecto */
+.proyecto-img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+}
+/*efecto hover */
+.proyecto-img:hover {
+    transform: scale(1.05); /*hace zoom suave */
+}
