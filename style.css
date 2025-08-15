@@ -197,4 +197,45 @@ img {
 section {
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
+/* ====== Barra de navegación ====== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(68, 68, 68, 0.3); /* Transparente al inicio */
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+/* Lista horizontal */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cada enlace */
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffcc00; /* Cambia al pasar el mouse */
+}
+header {
+    padding-top: 60px; /* Ajusta según la altura de tu navbar */
+}
 
